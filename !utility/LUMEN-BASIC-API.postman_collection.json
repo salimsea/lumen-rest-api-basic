@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "a08f182b-3803-4cf9-99e8-d3e989f973ec",
+		"name": "LUMEN-BASIC-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PRODUK ADD",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "1f34583f5057a9bb485fb963ccbfa08cf7f32c1c260ea9ec7470fd579c5a5985d840e5a07af02df0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nama\": \"baju murah\",\n\t\"harga\": 6000,\n\t\"kondisi\": \"baru\",\n\t\"warna\": \"hijau\",\n\t\"deskripsi\": \"baju merah\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/produk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRODUK UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "1f34583f5057a9bb485fb963ccbfa08cf7f32c1c260ea9ec7470fd579c5a5985d840e5a07af02df0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nama\": \"baju murah1\",\n\t\"harga\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/produk/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produk",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRODUK RETRIEVE",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "1f34583f5057a9bb485fb963ccbfa08cf7f32c1c260ea9ec7470fd579c5a5985d840e5a07af02df0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/produk/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produk",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRODUK RETRIEVE BY ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "1f34583f5057a9bb485fb963ccbfa08cf7f32c1c260ea9ec7470fd579c5a5985d840e5a07af02df0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/produk/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produk",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PRODUK DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "1f34583f5057a9bb485fb963ccbfa08cf7f32c1c260ea9ec7470fd579c5a5985d840e5a07af02df0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/produk/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produk",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER REGISTER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"salimajah01@gmail.com\",\n\t\"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"salimajah01@gmail.com\",\n\t\"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
